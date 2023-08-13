@@ -43,7 +43,6 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* flex-direction: column; */
 }
 
 .card {
@@ -52,7 +51,6 @@ main {
   padding: 2em;
   border-radius: 25px;
 }
-
 
 .star {
   border: 0px solid;
@@ -122,8 +120,9 @@ button[type="submit"] {
   background: var(--primary);
   color: var(--white);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   transition: all 1s;
+  letter-spacing: 0.1em;
 }
 
 button[type="submit"]:hover {
@@ -174,6 +173,8 @@ a {
   position: absolute;
   z-index: -1;
 }
+
+/* Mobile view */
 
 @media (max-width: 380px) {
   main {
