@@ -94,7 +94,6 @@ p {
   color: var(--lightGrey);
   font-weight: 700;
   transition: background-color 1s;
- 
 }
 
 .buttons>button:nth-child(even) {
