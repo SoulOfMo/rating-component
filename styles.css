@@ -159,10 +159,6 @@ img[alt="thank-you"] {
   font-size: 0.8rem;
 }
 
-.attribution {
-  margin-top: 10px;
-}
-
 a {
   text-decoration: none;
   color: var(--primary);
