@@ -1,0 +1,187 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* general styling */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --buttonbg: hsl(216, 12%, 54%);
+  --cardbg: hsl(213, 19%, 18%);
+  --mainbg: hsl(216, 12%, 8%);
+  --primary: hsl(25, 97%, 53%);
+}
+
+body {
+  background: var(--mainbg);
+  font-family: "overpass", sans-serif;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* flex-direction: column; */
+}
+
+.card {
+  background: var(--cardbg);
+  max-width: 380px;
+  padding: 2em;
+  border-radius: 25px;
+}
+
+
+.star {
+  border: 0px solid;
+  background: hsl(213, 19%, 15%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+  padding: 10px;
+}
+
+.star>img {
+  display: block;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+}
+
+h2 {
+  color: var(--white);
+  margin-bottom: 0.4em;
+}
+
+p {
+  color: var(--lightGrey);
+  font-size: 0.85em;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.buttons {
+  margin: 1.5em auto 2em;
+}
+
+.buttons>button {
+  width: 45px;
+  height: 45px;
+  border: 0px solid;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 15%);
+  color: var(--lightGrey);
+  font-weight: 700;
+  transition: background-color 1s;
+ 
+}
+
+.buttons>button:nth-child(even) {
+  margin: 0 12px;
+}
+
+.buttons>button:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.buttons button:focus {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+button[type="submit"] {
+  width: 92%;
+  border: 0px;
+  border-radius: 25px;
+  padding: 0.7em 0;
+  background: var(--primary);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: all 1s;
+}
+
+button[type="submit"]:hover {
+  background: var(--white);
+  color: var(--primary);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Rating State */
+
+.card2 {
+  text-align: center;
+}
+
+img[alt="thank-you"] {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.card2>p {
+  margin-top: 1em;
+  max-width: 310px;
+}
+
+.rating {
+  margin: 2em auto;
+  border: 0 solid;
+  background-color: hsl(213, 19%, 15%);
+  padding: 0.5em 1em;
+  width: max-content;
+  color: var(--primary);
+  border-radius: 25px;
+  font-size: 0.8rem;
+}
+
+.attribution {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.hidden {
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 380px) {
+  main {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}
